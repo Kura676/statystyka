@@ -1,0 +1,73 @@
+Lekcja: Podstawy rachunku prawdopodobieństwa
+
+
+
+1. Pojęcia kombinatoryczne
+
+- Permutacja: Liczba sposobów uporządkowania n-elementowego zbioru (bez powtórzeń).
+
+  * Wzór: P_n = n! = 1 * 2 * 3 * ... * n
+
+- Kombinacja: Liczba sposobów wyboru k elementów z n-elementowego zbioru bez względu na kolejność (wybór podzbioru).
+
+  * Wzór: C(n, k) = n! / (k! * (n - k)!)
+
+- Wariacja bez powtórzeń: Liczba sposobów wyboru k elementów z n-elementowego zbioru z uwzględnieniem ich kolejności.
+
+  * Wzór: V(n, k) = n! / (n - k)!
+
+- Wariacja z powtórzeniami: Liczba sposobów wyboru k-elementowego ciągu z n-elementowego zbioru, gdzie elementy mogą się powtarzać.
+
+  * Wzór: W(n, k) = n^k
+
+- Zastosowanie kombinatoryki: Umożliwia wyznaczenie liczby zdarzeń elementarnych sprzyjających zdarzeniu A (|A|) oraz liczby wszystkich możliwych zdarzeń elementarnych w przestrzeni Omega (|Omega|).
+
+
+
+2. Rachunek prawdopodobieństwa
+
+- Klasyczna definicja prawdopodobieństwa: Stosunek liczby zdarzeń sprzyjających A do liczby wszystkich równie prawdopodobnych zdarzeń elementarnych w przestrzeni Omega.
+
+  * Wzór: P(A) = |A| / |Omega|, gdzie P(A) mieści się w przedziale [0, 1].
+
+- Prawdopodobieństwo warunkowe: Prawdopodobieństwo zajścia zdarzenia A pod warunkiem, że zaszło zdarzenie B (przy założeniu, że P(B) > 0).
+
+  * Wzór: P(A|B) = P(A i B) / P(B)
+
+- Prawdopodobieństwo całkowite: Stosowane, gdy przestrzeń zdarzeń Omega można podzielić na spójne i rozłączne zdarzenia B1, B2, ..., Bn, pokrywające całą przestrzeń.
+
+  * Wzór: P(A) = P(A|B1)*P(B1) + P(A|B2)*P(B2) + ... + P(A|Bn)*P(Bn)
+
+- Wzór Bayesa: Pozwala obliczyć prawdopodobieństwo przyczynowe (prawdopodobieństwo warunkowe zdarzenia Bk pod warunkiem, że zaszło zdarzenie A).
+
+  * Wzór: P(Bk|A) = [P(A|Bk) * P(Bk)] / P(A)
+
+
+
+3. Schemat Bernoulliego
+
+- Definicja: Ciąg n niezależnych prób, z których każda kończy się sukcesem z prawdopodobieństwem p lub porażką z prawdopodobieństwem q = 1 - p.
+
+- Wzór na prawdopodobieństwo uzyskania k sukcesów w n próbach:
+
+  * P_n(k) = C(n, k) * p^k * q^(n-k)
+
+
+
+4. Zmienna losowa skokowa (dyskretna)
+
+- Definicja: Funkcja przypisująca zdarzeniom elementarnym określone wartości liczbowe z dyskretnego (przeliczalnego) zbioru.
+
+- Rozkład zmiennej losowej: Przyporządkowanie poszczególnym wartościom x_i odpowiadających im prawdopodobieństw p_i = P(X = x_i), przy czym suma wszystkich p_i musi wynosić 1.
+
+- Wartość oczekiwana E(X): Średnia ważona wartości, jakie może przyjąć zmienna losowa, gdzie wagami są ich prawdopodobieństwa.
+
+  * Wzór: E(X) = suma z (x_i * p_i)
+
+- Wariancja Var(X) lub D^2(X): Miara rozproszenia wartości zmiennej losowej wokół jej wartości oczekiwanej.
+
+  * Wzór: Var(X) = E(X^2) - [E(X)]^2 = suma z ([x_i - E(X)]^2 * p_i)
+
+- Odchylenie standardowe sigma(X): Pierwiastek kwadratowy z wariancji zmiennej losowej.
+
+  * Wzór: sigma(X) = pierwiastek z Var(X)
