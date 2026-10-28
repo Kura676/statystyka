@@ -1,0 +1,105 @@
+Lekcja: Analiza struktury, współzależności oraz dynamiki zjawisk masowych
+
+
+
+1. Skale pomiarowe i prezentacja danych
+
+- Skale pomiarowe:
+
+  * Nominalna: Klasyfikacja obiektów według cech jakościowych bez możliwości ich porządkowania (np. płeć, stan cywilny). Dopuszczalne działanie: zliczanie częstości, wyznaczanie dominanty.
+
+  * Porządkowa (porządkowa/rangowa): Umożliwia klasyfikację i ustalenie relacji wyższości/niższości (np. wykształcenie, stopnie wojskowe). Dopuszczalne działania: wyznaczanie mediany i kwantyli.
+
+  * Przedziałowa (interwałowa): Posiada stałą jednostkę miary oraz umowne zero (np. temperatura w stopniach Celsjusza). Dopuszczalne działania: dodawanie, odejmowanie, obliczanie średniej arytmetycznej.
+
+  * Stosunkowa (ilorazowa): Posiada bezwzględne zero będące brakiem cechy (np. wiek, dochód, waga). Dopuszczalne wszystkie działania arytmetyczne.
+
+- Prezentacja danych:
+
+  * Tabelaryczna: Szeregi szczegółowe, rozdzielcze (punktowe i przedziałowe).
+
+  * Graficzna: Wykresy słupkowe, kołowe, histogramy, wieloboki dziesiątkowe i skumulowane.
+
+
+
+2. Miary położenia (przeciętne)
+
+- Klasyczne miary położenia:
+
+  * Średnia arytmetyczna: Suma wartości zmiennej podzielona przez liczbę obserwacji.
+
+  * Średnia ważona: Używana, gdy poszczególnym obserwacjom przypisuje się różne wagi (np. w szeregach rozdzielczych przedziałowych).
+
+  * Średnia geometryczna: Pierwiastek n-tego stopnia z iloczynu wartości cechy; stosowana głównie do badania średniego tempa zmian.
+
+  * Średnia harmoniczna: Odwrotność średniej arytmetycznej z odwrotności wartości cechy; stosowana, gdy dane wyrażone są w postaci ilorazów (np. prędkość).
+
+- Pozycyjne miary położenia:
+
+  * Dominanta (Mo / D): Wartość najczęściej występująca w zbiorze.
+
+  * Mediana (Me / Q2): Wartość środkowa dzieląca uporządkowany zbiór danych na dwie równe części.
+
+  * Kwantyle: Wartości dzielące zbiór na określone części (kwartyle Q1, Q2, Q3, decyle, percentyle).
+
+
+
+3. Miary zmienności (rozproszenia)
+
+- Rozstęp (R): Różnica między wartością maksymalną a minimalną (R = x_max - x_min).
+
+- Rozstęp ćwiartkowy (Q): Różnica między trzecim a pierwszym kwartylem (Q = Q3 - Q1).
+
+- Wariancja (s^2): Średnia arytmetyczna kwadratów odchyleń poszczególnych wartości cechy od ich średniej arytmetycznej.
+
+- Odchylenie standardowe (s): Pierwiastek kwadratowy z wariancji; określa przeciętne odchylenie wartości cechy od średniej.
+
+- Odchylenie przeciętne (d): Średnia arytmetyczna bezwzględnych odchyleń wartości cechy od ich średniej arytmetycznej.
+
+- Odchylenie ćwiartkowe (Qd): Połowa rozstępu ćwiartkowego (Qd = (Q3 - Q1) / 2).
+
+- Współczynniki zmienności: Stosunek miary rozproszenia do miary położenia (klasyczny: odchylenie standardowe / średnia; pozycyjny: odchylenie ćwiartkowe / mediana).
+
+
+
+4. Miary asymetrii i skupienia (kurtozy)
+
+- Asymetria: Określa symetrię rozkładu wokół średniej.
+
+  * Wskaźniki skośności (klasyczny i pozycyjny).
+
+  * Współczynnik asymetrii: Dodatni (asymetria prawostronna), ujemny (asymetria lewonostronna), zerowy (rozkład symetryczny).
+
+- Kurtoza (skupienie): Określa stopień spiczastości rozkładu w porównaniu do rozkładu normalnego (kurtoza, eksces).
+
+
+
+5. Współczynniki korelacji (analiza współzależności)
+
+- Współczynnik korelacji liniowej Pearsona (r): Mierzy siłę i kierunek liniowej zależności między dwiema zmiennymi ilościowymi (przyjmuje wartości od -1 do 1).
+
+- Współczynnik korelacji rang Spearmana (r_s): Stosowany dla danych na skali porządkowej lub w przypadku braku liniowości relacji (przyjmuje wartości od -1 do 1).
+
+- Współczynnik tau-Kendalla: Mierzy monotoniczną zależność między dwiema zmiennymi w oparciu o pary zgodne i niezgodne.
+
+
+
+6. Analiza dynamiki zjawisk
+
+- Przyrosty:
+
+  * Przyrost absolutny: Różnica wartości w okresie badanym i okresie odniesienia (x_t - x_0 dla jednopodstawowych lub x_t - x_(t-1) dla łańcuchowych).
+
+  * Przyrost względny: Stosunek przyrostu absolutnego do wartości w okresie bazowym.
+
+- Indeksy indywidualne:
+
+  * Indeksy o stałej podstawie (jednopodstawowe): x_t / x_0 (wartość z okresu t podzielona przez wartość z okresu bazowego).
+
+  * Indeksy łańcuchowe: x_t / x_(t-1) (wartość z okresu t podzielona przez wartość z okresu poprzedniego).
+
+- Średnie miary dynamiki:
+
+  * Średnie tempo zmian: Obliczane za pomocą średniej geometrycznej z indeksów łańcuchowych.
+
+  * Średni przyrost absolutny: Średnia arytmetyczna z przyrostów łańcuchowych.
