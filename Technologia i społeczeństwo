@@ -1,0 +1,77 @@
+Lekcja: Technologia i społeczeństwo
+
+
+
+1. Opracowywanie informacji statystycznych i gromadzenie danych
+
+- Przetwarzanie danych w arkuszach kalkulacyjnych (np. MS Excel):
+
+  * Funkcje statystyczne: SREDNIA (średnia arytmetyczna), MEDIANA, DOMINANTAMODALNA, ODCH.STANDARDOWE.K (odchylenie standardowe próbki), WARIANCJA.
+
+  * Narzędzia analizy i wizualizacji: Tabele przestawne, sortowanie, filtrowanie, tworzenie wykresów (histogramy, wykresy liniowe, kołowe, rozproszenia).
+
+- Sposoby gromadzenia danych:
+
+  * Pomiary bezpośrednie, ankietyzacja (papierowa, CAWI – internetowa, CATI – telefoniczna), wywiady.
+
+  * Automatyczne zbieranie danych: Czujniki IoT, logi systemowe, web scraping, rejestry administracyjne.
+
+
+
+2. Nośniki danych i wzrost zasobów informacyjnych (Big Data)
+
+- Nośniki danych i ich typowe pojemności:
+
+  * Pamięć magnetyczna / HHD (dyski twarde – od kilkuset GB do kilkunastu TB).
+
+  * Pamięć półprzewodnikowa / SSD, pendrive, karty pamięci (od 64 GB do kilku TB).
+
+  * Nośniki optyczne: CD (700 MB), DVD (4.7 GB – 8.5 GB), Blu-ray (25 GB – 100 GB).
+
+  * Chmura obliczeniowa (Cloud Storage) – nieograniczona, skalowalna przestrzeń wirtualna.
+
+- Eksponencjalny wzrost zasobów danych (Big Data):
+
+  * Cechy Big Data (model 5V): Volume (duża objętość), Velocity (duża szybkość napływu), Variety (różnorodność formatów), Veracity (wiarygodność/zmienność jakości), Value (wartość biznesowa/analityczna).
+
+
+
+3. Zdrowie, długość życia i choroby cywilizacyjne
+
+- Zdrowie a długość trwania życia: Czynniki wpływające na jakość i długość życia (styl życia, dieta, aktywność fizyczna, dostęp do opieki medycznej, stan środowiska).
+
+- Choroby cywilizacyjne:
+
+  * Przyczyny: Siedzący tryb życia, niewłaściwa dieta, przewlekły stres, zanieczyszczenie środowiska, palenie tytoniu, nadużywanie alkoholu.
+
+  * Główne schorzenia: Choroby układu krążenia (zawały, udary, nadciśnienie), nowotwory, cukrzyca typu 2, otyłość, zaburzenia psychiczne (depresja, nerwice).
+
+- Główne problemy zdrowotne w różnych regionach świata:
+
+  * Kraje wysoko rozwinięte: Choroby cywilizacyjne, starzenie się populacji i choroby chorobowo-zwyrodnieniowe (np. Alzheimer).
+
+  * Kraje rozwijające się: Choroby zakaźne i pasożytnicze (np. malaria, HIV/AIDS, gruźlica), niedożywienie, brak dostępu do czystej wody pitnej i podstawowej opieki medycznej.
+
+- Epidemie i pandemie:
+
+  * Wpływ na realia społeczno-gospodarcze: Przerwanie łańcuchów dostaw, spadek PKB, obciążenie systemów ochrony zdrowia, zmiana modelu pracy (praca zdalna/hybrydowa), cyfryzacja usług i edukacji.
+
+
+
+4. Ochrona środowiska, problemy ekologiczne i rozwój gospodarczy
+
+- Zmiany środowiska naturalnego w wynik działalności gospodarczej:
+
+  * Efekt cieplarniany i globalne ocieplenie (emisja gazów cieplarnianych: CO2, metan).
+
+  * Wycinka lasów (wyleśnianie/deforestacja) i spadek bioróżnorodności.
+
+  * Zanieczyszczenie powietrza (smog, pyły PM2.5 i PM10), wód i gleb (odpady plastikowe, przemysłowe i rolnicze).
+
+- Ochrona przyrody i środowiska:
+
+  * Formy ochrony przyrody: Parki narodowe, rezerwaty, obszary Natura 2000.
+
+  * Koncepcja zrównoważonego rozwoju (Sustainable Development): Rozwój zaspokajający potrzeby współczesnych pokoleń bez ograniczania możliwości przyszłych pokoleń.
+
+  * Transformacja energetyczna: Przejście od paliw kopalnych do Odnawialnych Źródeł Energii (OZE – energia słoneczna, wiatrowa, wodna).
