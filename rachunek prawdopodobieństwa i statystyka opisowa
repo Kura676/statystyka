@@ -1,0 +1,140 @@
+================================================================================
+WZORY I OZNACZENIA: RACHUNEK PRAWDOPODOBIEŃSTWA I STATYSTYKA
+Olimpiada Statystyczna - Etap Okręgowy
+I. RACHUNEK PRAWDOPODOBIEŃSTWA I ZMIENNA LOSOWA
+1. KLASYCZNA DEFINICJA PRAWDOPODOBIEŃSTWA
+Służy do obliczania szansy zajścia zdarzenia, gdy wszystkie wyniki są tak samo prawdopodobne.
+WZÓR:
+P(A) = |A| / |Omega|
+OPIS LITER I SYMBOLI:
+P(A) -> Prawdopodobieństwo zajścia zdarzenia A.
+|A| -> Liczba zdarzeń sprzyjających (ile wyników spełnia warunki zadania).
+|Omega| -> Moc przestrzeni zdarzeń elementarnych (łączna liczba wszystkich możliwych wyników).
+/ -> Dzielenie.
+PRZYDATNE WZORY KOMBINATORYCZNE:
+Permutacje (liczba sposobów uszeregowania n elementów):
+P_n = n!
+(gdzie n! oznacza silnię, np. 4! = 1 * 2 * 3 * 4 = 24)
+Kombinacje (wybór k elementów z n-elementowego zbioru bez kolejności):
+Symbol Newtona: C(n, k) = n! / (k! * (n - k)!)
+n -> całkowita liczba elementów w zbiorze.
+k -> liczba elementów, które wybieramy.
+2. SCHEMAT BERNOULLIEGO (POWTARZANIE PRÓB)
+Stosowany, gdy powtarzasz to samo doświadczenie n razy w identycznych warunkach, a każdy wynik to tylko sukces lub porażka.
+WZÓR NA PRAWODOPODOBIEŃSTWO UZYSKANIA DOKŁADNIE k SUKCESÓW:
+P(X = k) = C(n, k) * (p^k) * (q^(n - k))
+OPIS LITER I SYMBOLI:
+X -> Zmienna losowa określająca liczbę uzyskanych sukcesów.
+k -> Konkretna liczba sukcesów, której prawdopodobieństwo liczysz (np. k = 3).
+n -> Całkowita liczba przeprowadzonych prób.
+C(n, k) -> Symbol Newtona: n! / (k! * (n - k)!).
+p -> Prawdopodobieństwo sukcesu w pojedynczym doświadczeniu.
+q -> Prawdopodobieństwo porażki w pojedynczym doświadczeniu (zawsze q = 1 - p).
+^ -> Oznacza potęgowanie (np. p^k to p do potęgi k).
+-> Oznacza mnożenie.
+3. WARTOŚĆ OCZEKIWANA E[X] (DLA ZMIENNEJ DYSKRETNEJ / SKOKOWEJ)
+Wyznacza teoretyczną średnią ważoną wartości, jakie może przyjąć zmienna losowa.
+WZÓR:
+E[X] = (x_1 * P(X = x_1)) + (x_2 * P(X = x_2)) + ... + (x_n * P(X = x_n))
+OPIS LITER I SYMBOLI:
+E[X] -> Wartość oczekiwana zmiennej losowej X (często oznaczana też literą m lub grecką literą mu).
+x_1, x_2, ..., x_n -> Kolejne możliwe wartości, jakie może przyjąć zmienna losowa X.
+P(X = x_1) -> Prawdopodobieństwo przypisane do wartości x_1.
+P(X = x_2) -> Prawdopodobieństwo przypisane do wartości x_2.
+4. WARIANCJA Var(X) ORAZ ODCHYLENIE STANDARDOWE D(X)
+Mierzą stopień rozproszenia wartości zmiennej losowej wokół jej wartości oczekiwanej.
+WZÓR NA WARIANCJĘ:
+Var(X) = E[X^2] - (E[X])^2
+WZÓR NA ODCHYLENIE STANDARDOWE:
+D(X) = pierwiastek_z(Var(X))
+OPIS LITER I SYMBOLI:
+Var(X) -> Wariancja zmiennej losowej X (oznaczana również jako D^2(X) lub sigma^2).
+E[X^2] -> Wartość oczekiwana kwadratu zmiennej losowej, liczona jako:
+(x_1^2 * P(X = x_1)) + (x_2^2 * P(X = x_2)) + ... + (x_n^2 * P(X = x_n)).
+(E[X])^2 -> Podniesiona do kwadratu wyliczona wcześniej wartość oczekiwana E[X].
+D(X) -> Odchylenie standardowe zmiennej losowej X (oznaczane również jako sigma).
+pierwiastek_z(...) -> Pierwiastek kwadratowy z podanej w nawiasie wartości.
+================================================================================
+II. STATYSTYKA OPISOWA I ANALIZA STRUKTURY
+1. ŚREDNIA ARYTMETYCZNA x_srednia
+Średnia wartość wyznaczona z próby badanych obiektów.
+WZÓR:
+x_srednia = (x_1 + x_2 + x_3 + ... + x_n) / n
+OPIS LITER I SYMBOLI:
+x_srednia -> Średnia arytmetyczna z badania empirycznego.
+x_1, x_2, ..., x_n -> Poszczególne wartości cechy zaobserwowane u kolejnych badanych jednostek.
+n -> Liczba wszystkich zbadanych jednostek (liczebność próby).
+2. ODCHYLENIE STANDARDOWE Z PRÓBY (S)
+Mierzy przeciętne odchylenie poszczególnych obserwacji od średniej arytmetycznej.
+WZÓR NA WARIANCJĘ Z PRÓBY (S^2):
+S^2 = [ (x_1 - x_srednia)^2 + (x_2 - x_srednia)^2 + ... + (x_n - x_srednia)^2 ] / n
+WZÓR NA ODCHYLENIE STANDARDOWE Z PRÓBY (S):
+S = pierwiastek_z(S^2)
+OPIS LITER I SYMBOLI:
+S^2 -> Wariancja z próby.
+S -> Odchylenie standardowe z próby.
+x_1, x_2, ..., x_n -> Poszczególne wartości z próby.
+x_srednia -> Średnia arytmetyczna próby.
+n -> Liczba obserwacji w próbie.
+3. WSPÓŁCZYNNIK ZMIENNOŚCI (V)
+Pozwala ocenić poziom zróżnicowania cechy w populacji (im wyższy procent, tym większa zmienność).
+WZÓR:
+V = (S / x_srednia) * 100%
+OPIS LITER I SYMBOLI:
+V -> Współczynnik zmienności (wynik podawany w procentach %).
+S -> Odchylenie standardowe z próby.
+x_srednia -> Średnia arytmetyczna próby.
+4. WSPÓŁCZYNNIK ASYMETRII (A)
+Mierzy kierunek i siłę asymetrii rozkładu cechy.
+WZÓR:
+A = (x_srednia - D) / S
+OPIS LITER I SYMBOLI:
+A -> Współczynnik asymetrii (jeśli A > 0 to asymetria jest dodatnia/prawostronna; jeśli A < 0 to ujemna/lewostronna).
+x_srednia -> Średnia arytmetyczna.
+D -> Dominanta (moda) – wartość, która występuje najczęściej w badanym zbiorze.
+S -> Odchylenie standardowe.
+5. KORELACJA I REGRESJA LINIOWA
+WSPÓŁCZYNNIK KORELACJI LINIOWEJ PEARSONA (r):
+Mierzy siłę oraz kierunek zależności liniowej między dwiema cechami ilościowymi X i Y.
+Wzór:
+r = [ (x_1 - x_srednia)(y_1 - y_srednia) + ... + (x_n - x_srednia)(y_n - y_srednia) ] /
+pierwiastek_z[ ( (x_1 - x_srednia)^2 + ... + (x_n - x_srednia)^2 ) * ( (y_1 - y_srednia)^2 + ... + (y_n - y_srednia)^2 ) ]
+r przyjmuje wartości od -1 do +1.
+r równe 0 oznacza brak zależności liniowej.
+r bliskie +1 oznacza silną zależność dodatnią (wzrost X powoduje wzrost Y).
+r bliskie -1 oznacza silną zależność ujemną (wzrost X powoduje spadek Y).
+PROSTA REGRESJI LINIOWEJ:
+Wzór: y = a * x + b
+y -> Zmienna objaśniana (zależna).
+x -> Zmienna objaśniająca (niezależna).
+a -> Współczynnik kierunkowy (mówi o ile średnio zmieni się wartość y, gdy x wzrośnie o 1 jednostkę).
+b -> Wyraz wolny (punkt przecięcia prostej z osią Y, czyli wartość y gdy x = 0).
+================================================================================
+III. ANALIZA DYNAMIKI I SZEREGI CZASOWE
+W badaniach dynamiki operujemy na ciągu wartości rejestrowanych w kolejnych okresach (np. latach lub miesiącach): y_1, y_2, y_3, ..., y_n.
+1. PRZYROST ABSOLUTNY 🏷️
+Mierzy bezwzględną zmianę wartości zjawiska (w jednostkach naturalnych, np. w zł, osobach, tonach).
+Przyrost łańcuchowy (porównanie do okresu poprzedniego):
+delta_y_l = y_t - y_(t-1)
+y_t -> Wartość zjawiska w okresie bieżącym (np. rok 2024).
+y_(t-1) -> Wartość zjawiska w okresie bezpośrednio poprzednim (np. rok 2023).
+Przyrost jednopodstawowy (porównanie do stałej bazy):
+delta_y_j = y_t - y_0
+y_t -> Wartość zjawiska w okresie bieżącym.
+y_0 -> Wartość zjawiska w okresie przyjętym jako stała podstawa (np. rok 2010).
+2. INDEKSY DYNAMIKI (I)
+Pokazują ile razy (lub o ile procent) zmieniła się wartość zjawiska w stosunku do okresu odniesienia.
+Indeks łańcuchowy (w ułamku lub procentach):
+I_l = (y_t / y_(t-1)) * 100%
+Indeks jednopodstawowy (w ułamku lub procentach):
+I_j = (y_t / y_0) * 100%
+PRZYROST WZGLĘDNY (tempo zmian w procentach):
+Tempo_zmian = [ (y_t / y_(t-1)) - 1 ] * 100%   LUB   Tempo_zmian = Indeks_lancuchowy_% - 100%
+3. PUNKTY PROCENTOWE (p. proc.)
+Służą do porównywania ze sobą dwóch wartości podanych bezpośrednio w procentach (np. stóp bezrobocia, stóp procentowych, udzałów).
+Zasada obliczania:
+Różnica w p. proc. = Wskaźnik_nowy_% - Wskaźnik_stary_%
+Przykład:
+Jeśli stopa bezrobocia wzrosła z 5% do 8%, to:
+Wzrosła o: 8 - 5 = 3 punkty procentowe (p. proc.).
+Wzrosła względnie o: ( (8 - 5) / 5 ) * 100% = 60%.
