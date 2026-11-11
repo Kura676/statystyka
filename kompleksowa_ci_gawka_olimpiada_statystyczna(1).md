@@ -43,6 +43,23 @@ Obliczamy sumy kolumn: $\sum x$, $\sum y$, $\sum x^2$, $\sum y^2$, $\sum xy$, gd
   To pierwiastek z wariancji próby (czyli pierwiastek z klocka jednoznacznego podzielonego przez mianownik):
   $$s_x = \sqrt{s_x^2} = \sqrt{\frac{K_{xx}}{n(n-1)}}$$
 
+  ---
+
+## 7. Współczynnik korelacji rang Spearmana ($r_s$)
+
+Gdy badamy cechy jakościowe lub rangowe (albo chcemy uniknąć wpływu skrajnych wartości odstających w zmiennych ilościowych), stosujemy współczynnik Spearmana.
+
+### Metoda 1: Klasyczny wzór na różnice rang ($d_i$)
+1. Porządkujemy obserwacje dla cechy $X$ i nadajemy im rangi ($R_x$), oraz to samo robimy dla cechy $Y$ ($R_y$).
+2. Obliczamy różnicę rang dla każdej pary: $d_i = R_{xi} - R_{yi}$.
+3. Podnosimy różnice do kwadratu i sumujemy je ($\sum d_i^2$).
+
+Wzór:
+$$r_s = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}$$
+
+### Metoda 2: Szybka metoda „z klocków” na rangach
+Ponieważ rangi są zwykłymi liczbami (od $1$ do $n$), po przekształceniu danych na rangi możesz po prostu **wrzucić gotowe rangi do standardowego wzoru na współczynnik Pearsona z klocków** ($K_{xy}$ oraz $K_{xx}, K_{yy}$ dla rang). Wynik będzie identyczny!
+
 ---
 
 ## 3. Prosta regresji liniowej ($y = ax + b$)
