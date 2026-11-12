@@ -1,0 +1,57 @@
+Kompletny, bezbłędny i dopracowany Framework O-Z-M-W (Opisz – Zlicz – Modeluj – Weryfikuj), łączący prostotę zapamiętania ze skutecznością egzaminacyjną.
+1. OPISZ (Ω i zasady gry)
+
+Zanim napiszesz pierwszy wzór, zdefiniuj dokładnie, na czym polega doświadczenie losowe.
+
+    Kolejność: Ma znaczenie (np. tworzenie liczb, kolejka, miejsca na podium) → wariacje / permutacje; nie ma znaczenia (np. losowanie kilku kul naraz) → kombinacje.
+
+    Zwracanie: Ze zwracaniem (pula elementów jest stała) czy bez zwracania (pula maleje po każdym kroku)?
+
+    Symetria i niezależność: Czy wszystkie wyniki są jednakowo prawdopodobne? Czy kolejne zdarzenia wpływają na siebie, czy są niezależne?
+
+2. ZLICZ (Kombinatoryka i logika zdarzeń)
+
+Policz moc zbiorów (∣Ω∣ oraz ∣A∣) lub rozpisz możliwe scenariusze.
+
+    Spójnik „I” (jednocześnie / kolejny etap) → mnożysz (⋅).
+
+    Spójnik „LUB” (różne, wykluczające się przypadki) → dodajesz (+).
+
+    Słowa-klucze „przynajmniej jeden / co najmniej” → zawsze licz zdarzenie przeciwne:
+    P(A)=1−P(A′)
+
+3. MODELUJ (Wybierz właściwe narzędzie matematyczne)
+
+Dopasuj strukturę zadania do odpowiedniego modelu obliczeniowego:
+
+    Klasyczne losowanie (wyniki jednakowo prawdopodobne):
+    P(A)=∣Ω∣∣A∣​
+
+    Zdarzenia niezależne (np. rzuty monetą, niezależne awarie urządzeń):
+    P(A∩B)=P(A)⋅P(B)
+
+    Powtarzalne próby z dwoma wynikami (sukces/porażka ze stałym prawdopodobieństwem p):
+    Schemat Bernoulliego:
+    Pn​(k)=(kn​)⋅pk⋅qn−k(gdzie q=1−p)
+
+    Doświadczenia wieloetapowe (drzewka):
+
+        Idziesz w przód (znasz I etap, pytają o II etap) → Prawdopodobieństwo całkowite (mnożysz wzdłuż gałęzi, dodajesz między gałęziami) lub zwykłe prawdopodobieństwo warunkowe P(Skutek∣Przyczyna).
+
+        Cofasz się w czasie (znasz wynik końcowy z II etapu, pytają o przyczynę z I etapu) → Wzór Bayesa:
+        P(A∣B)=P(B)P(A)⋅P(B∣A)​=suma wszystkich sˊciez˙ek do celuwybrana sˊciez˙ka do celu​
+
+    Zmienna losowa X:
+    Zbuduj tabelkę rozkładu (wartości xi​ oraz ich prawdopodobieństwa pi​), a następnie policz:
+
+        Wartość oczekiwaną: E(X)=∑xi​⋅pi​
+
+        Wariancję: Var(X)=E(X2)−[E(X)]2
+
+        Odchylenie standardowe: σ=Var(X)​
+
+4. WERYFIKUJ (Test bezpieczeństwa przed oddaniem odpowiedzi)
+
+    Czy każde obliczone prawdopodobieństwo mieści się w przedziale [0,1]? (Uwaga: wartość oczekiwana E(X) może być ujemna lub większa od 1, ale samo P(A) nigdy).
+
+    Czy suma prawdopodobieństw wszystkich rozłącznych przypadków w zadaniu wynosi dokładnie 1?
