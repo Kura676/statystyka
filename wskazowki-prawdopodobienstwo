@@ -55,3 +55,8 @@ Dopasuj strukturę zadania do odpowiedniego modelu obliczeniowego:
     Czy każde obliczone prawdopodobieństwo mieści się w przedziale [0,1]? (Uwaga: wartość oczekiwana E(X) może być ujemna lub większa od 1, ale samo P(A) nigdy).
 
     Czy suma prawdopodobieństw wszystkich rozłącznych przypadków w zadaniu wynosi dokładnie 1?
+
+
+Bernoulliego (dwumianowy) Stała liczba prób (n), losowanie ze zwracaniem (stałe p). Pytamy o k sukcesów w dowolnej kolejności.
+Hipergeometryczny Losowanie n sztuk bez zwracania ze skończonej puli N (w której jest K sukcesów). Szansa zmienia się z każdym ruchem.
+Geometryczny Powtarzamy próby do skutku, aż wypadnie pierwszy sukces (dokładnie w k-tej próbie).
