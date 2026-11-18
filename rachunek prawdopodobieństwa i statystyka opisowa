@@ -138,3 +138,28 @@ Przykład:
 Jeśli stopa bezrobocia wzrosła z 5% do 8%, to:
 Wzrosła o: 8 - 5 = 3 punkty procentowe (p. proc.).
 Wzrosła względnie o: ( (8 - 5) / 5 ) * 100% = 60%.
+
+Notatka: Zadanie 8 — Dyskretna zmienna losowa, wartość oczekiwana i wariancja
+1. Warunek normowania (suma prawdopodobieństw)
+Suma wszystkich prawdopodobieństw w rozkładzie zmiennej losowej musi wynosić dokładnie 1:
+
+
+(W zadaniu posłużyło to do wyznaczenia parametru a).
+2. Wartość oczekiwana E(X)
+Wartość oczekiwana (średnia teoretyczna) zmiennej skokowej jest sumą iloczynów wszystkich możliwych wartości przez odpowiadające im prawdopodobieństwa:
+
+3. Wariancja D^2(X) i odchylenie standardowe D(X)
+ * Wartość oczekiwana kwadratu zmiennej losowej E(X^2):
+   
+ * Wzór na wariancję (wersja skrócona):
+   
+ * Odchylenie standardowe D(X):
+   
+4. Własność wartości oczekiwanej dla przekształcenia liniowego
+Dla nowej zmiennej losowej postaci Y = c \cdot X + d (gdzie c oraz d to stałe):
+
+Informacja o błędach językowych w Twoim zapytaniu:
+W Twoim wpisie „Ok sporzadz notatke z zadania 8 wszytskie uzyte wzory” pojawiły się następujące usterki zapisu:
+ * Brak polskich znaków diakrytycznych: „sporzadz” (sporządź), „notatke” (notatkę), „wszytskie” (wszystkie), „uzyte” (użyte).
+ * Literówka: „wszytskie” (przestawione litery „t” i „s”; poprawnie: „wszystkie”).
+ * Interpunkcja i składnia: brak spójnika lub przecinka łączącego część polecającą z dopełnieniem: „OK, sporządź notatkę z zadania 8: wszystkie użyte wzory.”
