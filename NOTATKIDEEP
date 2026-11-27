@@ -1,0 +1,472 @@
+# Notatki do Olimpiady Statystycznej – etap okręgowy
+
+> Materiał opracowany na podstawie zakresu tematycznego Olimpiady Statystycznej oraz typów zadań pojawiających się w testach okręgowych.  
+> **Uwaga:** poniżej znajdują się wyłącznie notatki teoretyczne i metodyczne. Nie zawierają rozwiązań konkretnych zadań.
+
+---
+
+## 1. Przedmiot, metody i organizacja badań statystycznych
+
+### 1.1. Statystyka publiczna
+- **Statystyka publiczna** – system zbierania, gromadzenia, opracowywania i udostępniania danych statystycznych o zjawiskach społeczno-gospodarczych.
+- Główne instytucje:
+  - **GUS** – Główny Urząd Statystyczny,
+  - **US** – urzędy statystyczne w województwach,
+  - **PTE/PTStat** – Polskie Towarzystwo Statystyczne,
+  - **Komitet Statystyki i Ekonometrii PAN**.
+- Podstawowy akt prawny: **ustawa o statystyce publicznej**.
+- Zasady statystyki publicznej: legalność, celowość, kompletność, rzetelność, poufność, dostępność.
+
+### 1.2. Badania statystyczne
+- **Badanie statystyczne** – proces obejmujący:
+  1. przygotowanie badania,
+  2. zbieranie danych,
+  3. kontrolę i oczyszczanie danych,
+  4. opracowanie wyników,
+  5. prezentację i analizę.
+- Podział badań:
+  - **pełne** – obejmują całą zbiorowość (np. spis powszechny),
+  - **częściowe** – obejmują część zbiorowości (np. badanie reprezentacyjne, ankietowe, monograficzne).
+- **Spis** – badanie pełne, przeprowadzane okresowo.
+- **Badanie reprezentacyjne** – wnioski o całej populacji na podstawie próby.
+- **Losowanie próby** – dobór jednostek do badania; powinien być losowy, aby wyniki można było uogólniać.
+
+### 1.3. Źródła danych statystycznych
+- **Publikacje GUS**:
+  - Roczniki Statystyczne,
+  - Mały Rocznik Statystyczny,
+  - Rocznik Demograficzny,
+  - Rocznik Statystyczny Rolnictwa,
+  - Rocznik Statystyczny Przemysłu,
+  - Rocznik Statystyczny Pracy,
+  - „Wiadomości Statystyczne. The Polish Statistician”,
+  - „Polska w liczbach”.
+- **Bazy danych**:
+  - Bank Danych Lokalnych (BDL),
+  - Baza Demografia,
+  - Dziedzinowe Bazy Danych,
+  - SDDS.
+- **Czasopisma**:
+  - „Wiadomości Statystyczne”,
+  - „Gospodarka Narodowa”,
+  - „Ekonomista”,
+  - „Kwartalnik Statystyczny”.
+
+### 1.4. Klasyfikacje i standardy
+- **PKD 2007** – Polska Klasyfikacja Działalności; stosowana do klasyfikowania podmiotów gospodarczych.
+- **KŚT 2016** – Klasyfikacja Środków Trwałych.
+- **Nomenklatury i klasyfikacje** – obowiązują podmioty gospodarki narodowej w ewidencji, dokumentacji i rachunkowości.
+- **Standardy klasyfikacyjne** – mają charakter obowiązkowy w statystyce publicznej.
+
+### 1.5. Badania społeczne i rynku pracy
+- **BAEL** – Badanie Aktywności Ekonomicznej Ludności.
+  - Obejmuje osoby w wieku 15 lat i więcej.
+  - Dzieli ludność na: pracujących, bezrobotnych i biernych zawodowo.
+  - **Pracujący** – osoby wykonujące pracę przynoszącą zarobek lub dochód.
+  - **Bezrobotni** – osoby w wieku produkcyjnym, niepracujące, poszukujące pracy i gotowe do jej podjęcia.
+- **Stopa bezrobocia** – udział bezrobotnych w liczbie ludności aktywnej zawodowo.
+- **Współczynnik aktywności zawodowej** – udział aktywnych zawodowo w liczbie ludności w wieku 15 lat i więcej.
+
+---
+
+## 2. Analiza struktury, współzależności i dynamiki zjawisk
+
+### 2.1. Miary położenia
+- **Średnia arytmetyczna**:
+  \[
+  \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+  \]
+- **Średnia ważona**:
+  \[
+  \bar{x} = \frac{\sum_{i=1}^{k} x_i n_i}{\sum_{i=1}^{k} n_i}
+  \]
+- **Mediana (M)** – wartość środkowa w uporządkowanym szeregu.
+  - Dla \(n\) nieparzystego: \(M = x_{(n+1)/2}\).
+  - Dla \(n\) parzystego: \(M = \frac{x_{n/2} + x_{n/2+1}}{2}\).
+- **Dominanta (D)** – wartość najczęściej występująca.
+- **Kwantyle** – mediana, kwartyle, decyle, percentyle.
+  - **Kwartyl pierwszy \(Q_1\)** – 25% obserwacji ma wartości nie większe.
+  - **Kwartyl trzeci \(Q_3\)** – 75% obserwacji ma wartości nie większe.
+  - **Decyl dziewiąty \(Q_{9/10}\)** – 90% obserwacji ma wartości nie większe.
+
+### 2.2. Miary rozproszenia
+- **Wariancja**:
+  \[
+  \sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2
+  \]
+- **Odchylenie standardowe**:
+  \[
+  \sigma = \sqrt{\sigma^2}
+  \]
+- **Rozstęp**:
+  \[
+  R = x_{\max} - x_{\min}
+  \]
+- **Rozstęp ćwiartkowy**:
+  \[
+  R_Q = Q_3 - Q_1
+  \]
+- **Odchylenie ćwiartkowe**:
+  \[
+  Q = \frac{Q_3 - Q_1}{2}
+  \]
+- **Klasyczny współczynnik zmienności**:
+  \[
+  V = \frac{\sigma}{\bar{x}} \cdot 100\%
+  \]
+- **Pozycyjny współczynnik zmienności**:
+  \[
+  V_Q = \frac{Q}{M} \cdot 100\%
+  \]
+
+### 2.3. Miary asymetrii i koncentracji
+- **Współczynnik asymetrii** – informuje o skośności rozkładu.
+- **Kurtoza** – informuje o „spłaszczeniu” lub „szczytowości” rozkładu.
+- **Współczynnik Giniego** – miara nierównomierności rozkładu dochodów; 0 – równość, 1 – pełna nierówność.
+- **Krzywa Lorenza** – graficzna ilustracja nierówności.
+
+### 2.4. Analiza współzależności
+- **Kowariancja**:
+  \[
+  cov(X,Y) = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
+  \]
+- **Współczynnik korelacji liniowej Pearsona**:
+  \[
+  r = \frac{cov(X,Y)}{\sigma_X \sigma_Y}
+  \]
+  - \(r \in [-1, 1]\).
+  - \(r > 0\) – korelacja dodatnia, \(r < 0\) – ujemna, \(r \approx 0\) – brak liniowego związku.
+- **Współczynnik korelacji rang Spearmana**:
+  \[
+  r_s = 1 - \frac{6\sum d_i^2}{n(n^2-1)}
+  \]
+  - Stosowany dla cech porządkowych lub gdy związek nie jest liniowy.
+- **Regresja liniowa**:
+  \[
+  y = at + b
+  \]
+  - \(a\) – współczynnik kierunkowy (tempo zmian),
+  - \(b\) – wyraz wolny,
+  - \(R^2\) – współczynnik determinacji; im bliższy 1, tym lepsze dopasowanie.
+
+### 2.5. Analiza dynamiki
+- **Przyrost absolutny**:
+  \[
+  \Delta = y_t - y_{t-1}
+  \]
+- **Przyrost względny**:
+  \[
+  \frac{\Delta}{y_{t-1}} \cdot 100\%
+  \]
+- **Indeks łańcuchowy**:
+  \[
+  i_{t/t-1} = \frac{y_t}{y_{t-1}}
+  \]
+- **Indeks o stałej podstawie**:
+  \[
+  i_{t/0} = \frac{y_t}{y_0}
+  \]
+- **Średni indeks zmian**:
+  \[
+  \bar{i} = \sqrt[n-1]{\frac{y_n}{y_1}}
+  \]
+- **Średnie tempo zmian**:
+  \[
+  \bar{T} = (\bar{i} - 1) \cdot 100\%
+  \]
+
+### 2.6. Szeregi czasowe
+- **Szereg czasowy** – uporządkowane chronologicznie wartości cechy.
+- **Trend** – ogólna tendencja rozwojowa.
+- **Wahania okresowe** – regularne zmiany w cyklach.
+- **Wahania przypadkowe** – nieprzewidywalne odchylenia.
+- **Metoda analityczna** – dopasowanie funkcji trendu.
+
+---
+
+## 3. Podstawy rachunku prawdopodobieństwa
+
+### 3.1. Podstawowe pojęcia
+- **Doświadczenie losowe** – proces, którego wynik jest nieprzewidywalny.
+- **Zbiór zdarzeń elementarnych \(\Omega\)** – wszystkie możliwe wyniki.
+- **Zdarzenie losowe** – podzbiór \(\Omega\).
+- **Prawdopodobieństwo klasyczne**:
+  \[
+  P(A) = \frac{|A|}{|\Omega|}
+  \]
+  – gdy wszystkie wyniki są jednakowo prawdopodobne.
+
+### 3.2. Działania na zdarzeniach
+- **Suma zdarzeń** \(A \cup B\) – zachodzi A lub B.
+- **Iloczyn zdarzeń** \(A \cap B\) – zachodzą A i B.
+- **Zdarzenie przeciwne** \(A'\) – nie zachodzi A.
+- **Prawdopodobieństwo sumy**:
+  \[
+  P(A \cup B) = P(A) + P(B) - P(A \cap B)
+  \]
+- **Prawdopodobieństwo zdarzenia przeciwnego**:
+  \[
+  P(A') = 1 - P(A)
+  \]
+
+### 3.3. Prawdopodobieństwo warunkowe i całkowite
+- **Prawdopodobieństwo warunkowe**:
+  \[
+  P(A|B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) > 0
+  \]
+- **Prawdopodobieństwo całkowite**:
+  \[
+  P(A) = \sum_{i=1}^{n} P(A|B_i)P(B_i)
+  \]
+  gdzie \(B_i\) tworzą zupełny układ zdarzeń.
+- **Wzór Bayesa**:
+  \[
+  P(B_i|A) = \frac{P(A|B_i)P(B_i)}{\sum_{j} P(A|B_j)P(B_j)}
+  \]
+
+### 3.4. Kombinatoryka
+- **Permutacje** – uporządkowania wszystkich elementów:
+  \[
+  P_n = n!
+  \]
+- **Kombinacje** – wybór \(k\) elementów z \(n\) bez uwzględnienia kolejności:
+  \[
+  \binom{n}{k} = \frac{n!}{k!(n-k)!}
+  \]
+- **Wariacje bez powtórzeń**:
+  \[
+  V_n^k = \frac{n!}{(n-k)!}
+  \]
+- **Wariacje z powtórzeniami**:
+  \[
+  W_n^k = n^k
+  \]
+
+### 3.5. Zmienna losowa skokowa
+- **Zmienna losowa** – funkcja przyporządkowująca wynikom doświadczenia liczby.
+- **Rozkład prawdopodobieństwa** – zestaw wartości i ich prawdopodobieństw.
+- **Dystrybuanta**:
+  \[
+  F(x) = P(X \le x)
+  \]
+- **Wartość oczekiwana**:
+  \[
+  E(X) = \sum_{i} x_i p_i
+  \]
+- **Wariancja**:
+  \[
+  Var(X) = E(X^2) - [E(X)]^2
+  \]
+- **Odchylenie standardowe**:
+  \[
+  \sigma = \sqrt{Var(X)}
+  \]
+
+### 3.6. Schemat Bernoulliego
+- **Doświadczenie Bernoulliego** – dwa możliwe wyniki: sukces (p) i porażka (1-p).
+- **Schemat Bernoulliego** – \(n\) niezależnych prób.
+- **Rozkład dwumianowy**:
+  \[
+  P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+  \]
+- **Wartość oczekiwana**:
+  \[
+  E(X) = np
+  \]
+- **Wariancja**:
+  \[
+  Var(X) = np(1-p)
+  \]
+
+---
+
+## 4. Rynek, gospodarka, przedsiębiorstwo
+
+### 4.1. Podatki
+- **Podatek** – przymusowe, bezzwrotne świadczenie pieniężne na rzecz państwa.
+- **Podatki bezpośrednie** – obciążają dochód lub majątek:
+  - PIT – podatek dochodowy od osób fizycznych,
+  - CIT – podatek dochodowy od osób prawnych,
+  - podatek od nieruchomości,
+  - podatek rolny,
+  - podatek leśny.
+- **Podatki pośrednie** – wliczone w cenę towarów i usług:
+  - VAT – podatek od towarów i usług,
+  - akcyza,
+  - cło.
+- **VAT** – podatek pośredni, naliczany na każdym etapie obrotu.
+
+### 4.2. Budżet państwa
+- **Budżet państwa** – plan dochodów i wydatków państwa na rok budżetowy.
+- **Dochody budżetu** – podatki, cła, dochody z majątku, opłaty.
+- **Wydatki budżetu** – wydatki publiczne, dotacje, subwencje.
+- **Deficyt budżetowy** – nadwyżka wydatków nad dochodami.
+- **Dług publiczny** – suma zobowiązań państwa.
+- **Progi ostrożnościowe** – relacja długu publicznego do PKB:
+  - 50% – pierwszy próg,
+  - 55% – drugi próg,
+  - 60% – trzeci próg.
+- **Ustawa budżetowa** – uchwalana przez Sejm, podpisywana przez Prezydenta.
+- **Prezydent** może odmówić podpisania ustawy budżetowej, ale musi ją podpisać w ciągu 7 dni lub skierować do Trybunału Konstytucyjnego.
+
+### 4.3. Przedsiębiorstwo
+- **Aktywa** – majątek przedsiębiorstwa:
+  - **aktywa trwałe** – rzeczowe aktywa trwałe, wartości niematerialne, inwestycje długoterminowe,
+  - **aktywa obrotowe** – zapasy, należności krótkoterminowe, inwestycje krótkoterminowe, środki pieniężne.
+- **Pasywa** – źródła finansowania majątku:
+  - kapitał własny,
+  - zobowiązania i rezerwy.
+- **Analiza finansowa** – ocena kondycji przedsiębiorstwa:
+  - wskaźniki rentowności,
+  - wskaźniki płynności,
+  - wskaźniki zadłużenia,
+  - wskaźniki sprawności działania.
+- **Przychód** – wartość sprzedaży.
+- **Koszt** – zużycie zasobów.
+- **Zysk brutto** = przychody – koszty.
+- **Zysk netto** = zysk brutto – podatek.
+
+### 4.4. Kredyt bankowy
+- **Funkcje kredytu**:
+  - emisyjna,
+  - dochodowa,
+  - tezauryzacyjna,
+  - redystrybucji międzypokoleniowej.
+- **Rodzaje kredytów** – konsumpcyjne, inwestycyjne, hipoteczne, obrotowe.
+
+### 4.5. Rynek i gospodarka
+- **Rynek** – ogół transakcji kupna-sprzedaży.
+- **Równowaga rynkowa** – popyt = podaż.
+- **Inflacja** – wzrost ogólnego poziomu cen.
+- **Bezrobocie** – zjawisko braku pracy dla osób zdolnych i gotowych do pracy.
+- **Globalizacja** – proces integracji gospodarek światowych.
+- **Rynek pieniężny, kapitałowy, walutowy** – segmenty rynku finansowego.
+
+---
+
+## 5. Przemiany społeczno-gospodarcze w Polsce i na świecie
+
+### 5.1. Demografia
+- **Przyrost naturalny**:
+  \[
+  PN = U - Z
+  \]
+  gdzie \(U\) – urodzenia, \(Z\) – zgony.
+- **Współczynnik urodzeń**:
+  \[
+  \frac{U}{L} \cdot 1000
+  \]
+- **Współczynnik zgonów**:
+  \[
+  \frac{Z}{L} \cdot 1000
+  \]
+- **Współczynnik dzietności** – liczba dzieci na kobietę w wieku rozrodczym.
+- **Średnia długość trwania życia** – przeciętna liczba lat do przeżycia.
+- **Współczynnik feminizacji** – liczba kobiet na 100 mężczyzn.
+- **Współczynnik maskulinizacji** – liczba mężczyzn na 100 kobiet.
+- **Gęstość zaludnienia** – liczba osób na km².
+- **Wskaźnik urbanizacji** – udział ludności miejskiej w ogólnej liczbie ludności.
+- **Przyrost rzeczywisty** – przyrost naturalny + saldo migracji.
+
+### 5.2. Wskaźniki społeczno-gospodarcze
+- **PKB** – produkt krajowy brutto.
+- **PKB per capita** – PKB na mieszkańca.
+- **HDI** – wskaźnik rozwoju społecznego (Health, Education, Income).
+- **Współczynnik Giniego** – nierówności dochodowe.
+- **Stopa bezrobocia**:
+  \[
+  \frac{\text{bezrobotni}}{\text{aktywni zawodowo}} \cdot 100\%
+  \]
+- **Współczynnik aktywności zawodowej**:
+  \[
+  \frac{\text{aktywni zawodowo}}{\text{ludność w wieku 15+}} \cdot 100\%
+  \]
+
+### 5.3. Polska w UE
+- **UE** – Unia Europejska; Polska od 2004 r.
+- **Fundusze UE** – środki na rozwój regionalny, rolnictwo, infrastrukturę.
+- **Wspólny rynek** – swoboda przepływu towarów, usług, osób i kapitału.
+- **Euro** – waluta UE; Polska nie przyjęła euro.
+
+### 5.4. Samorząd terytorialny
+- **Struktura samorządu**:
+  - gmina,
+  - powiat,
+  - województwo.
+- **Dochody samorządu** – podatki lokalne, subwencje, dotacje.
+- **Wydatki samorządu** – oświata, infrastruktura, ochrona zdrowia, kultura.
+
+---
+
+## 6. Technologia, przyroda, nauki o zdrowiu
+
+### 6.1. Opracowywanie danych
+- **Arkusz kalkulacyjny (Excel)** – narzędzie do obliczeń statystycznych:
+  - funkcje: ŚREDNIA, MEDIANA, MODA, ODCHYLENIE.STANDARDOWE, WARIANCJA, KORELACJA,
+  - tabele przestawne,
+  - wykresy.
+- **Bazy danych** – zbiory danych uporządkowane według określonego schematu.
+- **Nośniki danych** – dyski twarde, SSD, pendrive, płyty CD/DVD, chmura.
+- **Pojemności nośników** – KB, MB, GB, TB, PB.
+
+### 6.2. Imputacja
+- **Imputacja** – uzupełnianie brakujących danych.
+- Metody imputacji:
+  - imputacja średnią,
+  - imputacja medianą,
+  - imputacja modalną,
+  - imputacja regresyjna,
+  - imputacja hot-deck.
+- **Celem imputacji** jest zapewnienie kompletności zbioru danych.
+
+### 6.3. Zdrowie i środowisko
+- **Choroby cywilizacyjne** – choroby związane ze stylem życia:
+  - choroby układu krążenia,
+  - nowotwory,
+  - cukrzyca,
+  - otyłość,
+  - choroby psychiczne.
+- **Epidemie** – szybkie rozprzestrzenianie się choroby zakaźnej.
+- **Ochrona środowiska** – działania na rzecz zachowania środowiska naturalnego.
+- **Problemy ekologiczne** – zanieczyszczenie powietrza, wód, gleby, zmiany klimatyczne, utrata bioróżnorodności.
+- **Zrównoważony rozwój** – rozwój zaspokajający potrzeby obecnych pokoleń bez ograniczania możliwości przyszłych pokoleń.
+
+### 6.4. Zdrowie a długość trwania życia
+- **Długość trwania życia** – zależy od:
+  - stylu życia,
+  - dostępu do opieki zdrowotnej,
+  - warunków środowiskowych,
+  - czynników genetycznych.
+- **Wskaźniki zdrowotne**:
+  - śmiertelność niemowląt,
+  - umieralność,
+  - zachorowalność.
+
+---
+
+## 7. Praktyczne wskazówki egzaminacyjne
+
+1. **Czytaj polecenia uważnie** – zwłaszcza w pytaniach wielokrotnego wyboru i typu „szereguj”.
+2. **Sprawdzaj jednostki** – w zadaniach z dynamiki, produkcji i finansów.
+3. **Pamiętaj o definicjach** – wiele pytań sprawdza podstawowe pojęcia.
+4. **Rozróżniaj miary** – średnia, mediana, dominanta, kwartyle.
+5. **Znaj wzory** – szczególnie na prawdopodobieństwo, wartość oczekiwaną, wariancję.
+6. **Uważaj na znaki** – przyrosty absolutne i względne mogą być ujemne.
+7. **Korzystaj z danych GUS** – w pytaniach o Polskę i UE.
+8. **Ćwicz na testach z poprzednich lat** – to najlepsza metoda przygotowania.
+
+---
+
+## 8. Lista kontrolna przed egzaminem
+
+- [ ] Znasz podstawowe pojęcia statystyki publicznej.
+- [ ] Umiesz obliczyć średnią, medianę, dominantę, wariancję, odchylenie standardowe.
+- [ ] Znasz wzory na kowariancję i współczynnik korelacji Pearsona.
+- [ ] Umiesz obliczyć przyrosty absolutne i względne oraz indeksy.
+- [ ] Znasz podstawy prawdopodobieństwa i schemat Bernoulliego.
+- [ ] Rozróżniasz podatki bezpośrednie i pośrednie.
+- [ ] Znasz strukturę budżetu państwa i progi ostrożnościowe.
+- [ ] Umiesz wskazać aktywa trwałe i obrotowe.
+- [ ] Znasz wskaźniki demograficzne i współczynnik Giniego.
+- [ ] Wiesz, czym jest imputacja i do czego służy.
+- [ ] Umiesz korzystać z podstawowych funkcji arkusza kalkulacyjnego.
